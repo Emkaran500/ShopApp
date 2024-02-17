@@ -1,0 +1,170 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-body
+{
+    background-color: dodgerblue;
+}
+
+.div-margin
+{
+    width: 1110px;
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.div-top
+{
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.button-top
+{
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+}
+
+.product-square
+{
+    background-color: cadetblue;
+    font-size: 18px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3px;
+    margin-bottom: 10px;
+}
+
+.product-item
+{
+    max-height: 41px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-id
+{
+    display: none;
+}
+
+.stored-id
+{
+    display: none;
+}
+
+.product-title
+{
+    font-size: 20px;
+    background-color: azure;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.product-price
+{
+    font-size: 30px;
+    color: blue;
+}
+
+.product-rating
+{
+    font-size: 24px;
+    color: red;
+}
+
+.product-button
+{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: whitesmoke;
+}
+
+.product-stored
+{
+    font-size: 20px;
+    background-color: deepskyblue;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.span-stored
+{
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.span-stored:last-child
+{
+    margin-right: 0px;
+}
+
+.div-stored
+{
+    font-size: 24px;
+    background-color: mediumturquoise;
+    padding-left: 100px;
+}
+
+.product-body
+{
+    width: 700px;
+}
+
+.products-stored
+{
+    padding-left: 100px;
+    background-color: aqua;
+}
+
+.product-in-store
+{
+    border-width: 2px;
+    border-color: red;
+    color: red;
+}
+
+.loader-body
+{
+    width: 1110px;
+}
+
+.loader
+{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite alternate;
+    margin: 400px auto;
+}
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button-delete
+{
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
