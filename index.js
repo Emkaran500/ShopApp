@@ -364,30 +364,12 @@ document.body.addEventListener('click', (e) =>
                 }, 2000)
                 break;
             case 'Delete product':
-                freezeClick = true;
-                ROOT_PRODUCTS.style.display = 'none';
-                ROOT_STORE_CARD.style.display = 'none';
-                loaderPage.render();
-                setTimeout(() => {
-                    const localStorageUtil = new LocalStorageUtil();
-                    const node = e.target.parentNode.querySelector('.stored-id');
-                    localStorageUtil.putProducts(Number(node.textContent));
-                    render();
-                    ROOT_PRODUCTS.style.display = 'none';
-                    ROOT_STORE_CARD.style.display = 'block';
-                    freezeClick = false;
-                }, 1000)
+                const localStorageUtil = new LocalStorageUtil();
+                const node = e.target.parentNode.querySelector('.stored-id');
+                localStorageUtil.putProducts(Number(node.textContent));
+                render();
                 break;
             default:
-                freezeClick = true;
-                ROOT_PRODUCTS.style.display = 'none';
-                ROOT_STORE_CARD.style.display = 'none';
-                loaderPage.render();
-                setTimeout(() => {
-                    loaderPage.remove();
-                    ROOT_PRODUCTS.style.display = 'block';
-                    freezeClick = false;
-                }, 1000)
                 const productsPage = new Products();
                 productsPage.handlerSetLocalStorage(e.target.parentNode, Number(e.target.parentNode.querySelector('.product-id').textContent));
                 break;
